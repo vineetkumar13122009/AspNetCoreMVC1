@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/Vineet.BookStore/.vs/Vineet.BookStore
+/Vineet.BookStore/Vineet.BookStore/bin/Debug/netcoreapp3.1
+/Vineet.BookStore/Vineet.BookStore/obj
