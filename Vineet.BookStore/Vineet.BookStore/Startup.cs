@@ -39,6 +39,7 @@ namespace Vineet.BookStore
             }
 
             //app.UseStaticFiles();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
@@ -46,11 +47,15 @@ namespace Vineet.BookStore
 
             app.UseEndpoints(endpoints =>
             {
+
+                endpoints.MapDefaultControllerRoute();
                 //endpoints.MapRazorPages();
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                
+                
+                //endpoints.MapGet("/", async context =>
+                //{
+                //    await context.Response.WriteAsync("Hello World!");
+                //});
             });
         }
     }
